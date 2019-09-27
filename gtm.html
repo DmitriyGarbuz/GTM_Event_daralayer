@@ -1,0 +1,16 @@
+<script>
+    function showForm() {
+    var n = window.document.getElementsByClassName("CLASS_NAME").length; // Your CLASS_NAME
+      if (n != 0){
+          dataLayer.push({
+                            'event':'NAME_EVENT', // Your NAME_EVENT
+                            'eventCategory':'ChangeForm', // Your ChangeForm
+                            'eventAction':'ActionChangeForm', // Your ActionChangeForm
+                            })
+            console.log("Ok"); // delete after checkout
+      }else{
+        console.log("Ne Ok"); // delete after checkout
+      } 
+    }
+    window.setTimeout (showForm,5000); 
+    </script>
